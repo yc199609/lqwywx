@@ -12,7 +12,7 @@
     "pages/vibration_curves/index",
     "pages/user/index",
     "pages/status/index",
-    "pages/index/index"
+    "pages/lua_curve/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,6 +22,9 @@
     "backgroundColor": "#fbf9fe"
   },
   "tabBar":{
+    "color": "#7a7e83",
+    "selectedColor": "#0faeff",
+    "backgroundColor": "#ffffff",
     "list":[
       {
         "pagePath":"pages/deviceStatusList/index",

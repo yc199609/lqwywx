@@ -1,6 +1,8 @@
 Page({
   handleCurve(){
-
+    wx.navigateTo({
+      url:"/pages/lua_curve/index"
+    })
   },
   handleWarn(){
     wx.navigateTo({

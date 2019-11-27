@@ -431,7 +431,6 @@ checkbox.green[checked] .wx-checkbox-input,
 checkbox[checked] .wx-checkbox-input,
 radio.green[checked] .wx-radio-input,
 radio[checked] .wx-radio-input {
-	background-color: var(--green) !important;
 	color: var(--white) !important;
 }
 

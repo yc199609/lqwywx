@@ -66,14 +66,14 @@
           <view class="cu-item" wx:for="{{organization}}">
             <label class="flex justify-between align-center flex-sub">
             <view class="flex-sub">{{item.name}}</view>
-            <radio class="round"></radio>
+            <radio class="round" color="#0faeff"></radio>
             </label>
           </view>
         </view>
       </radio-group>
       <view class="action" style="margin-top: 40rpx;">
-        <button class="cu-btn line-green text-green" bindtap="hideModal">取消</button>
-        <button class="cu-btn bg-green margin-left" bindtap="toDeviceState">确定</button>
+        <button class="cu-btn line-blue text-blue" bindtap="hideModal">取消</button>
+        <button class="cu-btn bg-blue margin-left" bindtap="toDeviceState">确定</button>
       </view>
       </view>
     </view>

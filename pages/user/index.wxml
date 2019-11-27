@@ -35,14 +35,14 @@
           <view class="cu-item" wx:for="{{organization}}">
             <label class="flex justify-between align-center flex-sub">
             <view class="flex-sub">{{item.name}}</view>
-            <radio class="round"></radio>
+            <radio class="round" color="#0faeff"></radio>
             </label>
           </view>
         </view>
       </radio-group>
       <view class="action" style="margin-top: 40rpx;">
-        <button class="cu-btn line-green text-green" bindtap="hideModal">取消</button>
-        <button class="cu-btn bg-green margin-left" bindtap="toChange">确定</button>
+        <button class="cu-btn line-blue text-blue" bindtap="hideModal">取消</button>
+        <button class="cu-btn bg-blue margin-left" bindtap="toChange">确定</button>
       </view>
       </view>
     </view>
@@ -60,7 +60,7 @@
       确认退出登录?
     </view>
       <view class="cu-bar bg-white bar">
-        <view class="action margin-0 flex-sub text-green solid-left left" bindtap="hideModal2" >取消</view>
+        <view class="action margin-0 flex-sub text-blue solid-left left" bindtap="hideModal2" >取消</view>
       <view style="height: 100rpx; width: 1px; background: #DCDDDD;"></view>
         <view class="action margin-0 flex-sub  solid-left" bindtap="submitLoginOut">确定</view>
       </view>

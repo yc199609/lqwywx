@@ -4,7 +4,7 @@
     "pages/chip_bind/index",
     "pages/chip_bind_detail/index",
     "pages/devices_handover/index",
-    "pages/deviceStatusList/index",
+    "pages/device_status_list/index",
     "pages/fault_details/index",
     "pages/fault_list/index",
     "pages/fault_reason/index",
@@ -27,7 +27,7 @@
     "backgroundColor": "#ffffff",
     "list":[
       {
-        "pagePath":"pages/deviceStatusList/index",
+        "pagePath":"pages/device_status_list/index",
         "text": "状态监控",
 				"iconPath": "static/status.png",
 				"selectedIconPath": "static/status_active.png"

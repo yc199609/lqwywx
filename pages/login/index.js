@@ -36,7 +36,7 @@ Page({
   },
   toDeviceState() {
     wx.switchTab({
-      url: '/pages/deviceStatusList/index'
+      url: '/pages/device_status_list/index'
     });
   },
   // 点击登录

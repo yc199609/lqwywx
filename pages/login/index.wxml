@@ -1,0 +1,81 @@
+<!-- 登录页面 -->
+<view class="main">
+  <!-- 头部分 -->
+  <view class="header">
+    <view class="title">登\t\t录</view>
+    <view class="img">
+      <!-- 微信登录 -->
+      <image src="https://cdn.gosafenet.com/static/weixin/static/login/login-weixin.png" mode="widthFix" wx:if="{{loginMode==='wx'}}"></image>
+      <!-- 手机号登录 -->
+      <image src="https://cdn.gosafenet.com/static/weixin/static/login/login-person.png" mode="widthFix" wx:elif="{{loginMode==='phone'}}"></image>
+    </view>
+  </view>
+  <!-- 登录部分 -->
+  <view class="login padding-xl radius shadow-warp bg-white">
+			<!-- 账号登录方式 -->
+    <view wx:if="{{loginMode==='phone'}}">
+      <view style="padding-bottom: 110rpx;"></view>
+      <form class="form">
+        <view class="cu-form-group number">
+          <image src="https://cdn.gosafenet.com/static/weixin/static/login/user.png" class="inpImg" mode="widthFix" />
+          <input placeholder="请输入电话号码" placeholder-style="color:#DCDDDD;font-size: 37rpx"></input>
+        </view>
+        <view class="cu-form-group" style="border-bottom: 1px solid rgb(238, 238, 238);">
+          <image src="https://cdn.gosafenet.com/static/weixin/static/login/pwd.png" class="inpImg" mode="widthFix"/>
+          <input placeholder="请输入登录密码" placeholder-style="color:#DCDDDD;font-size: 37rpx;" password="true"></input>
+        </view>
+      </form>
+      <view style="padding-bottom: 60rpx;"></view>
+    </view>
+    <!-- 微信登录方式 -->
+    <view wx:elif="{{loginMode==='wx'}}">
+      <image src="https://cdn.gosafenet.com/static/weixin/static/device.png" mode="widthFix" class="img" />
+      <view class="name">用户名</view>
+    </view>
+    <view class="padding flex flex-direction">
+      <button class="cu-btn margin-tb-sm lg" bindtap="showModal" data-target="Modal">登 录</button>
+    </view>
+  </view>
+
+  <text class="tips" wx:if="{{loginMode==='phone'}}">请使用旋转无忧系统网页端注册账号登录</text>
+
+  <!-- 忘记密码/新用户注册 -->
+  <view class="bottomBox">
+    <view class="line"></view>
+    <view class="text">
+      <text>其他登录方式</text>
+    </view>
+    <view class="img">
+      <image src="https://cdn.gosafenet.com/static/weixin/static/login/login-person.png" mode="widthFix" wx:if="{{loginMode=='wx'}}" bindtap="changePhone" />
+      <image src="https://cdn.gosafenet.com/static/weixin/static/login/login-weixin.png" wx:elif="{{loginMode=='phone'}}" mode="widthFix" bindtap="changeWx" />
+    </view>
+  </view>
+
+  <!--  弹框  -->
+  <view class="cu-modal {{modalName=='Modal'?'show':''}}">
+    <view class="cu-dialog">
+      <view class="cu-bar bg-white justify-end">
+        <view class="content">请选择机构</view>
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close text-red"></text>
+        </view>
+      </view>
+      <view class="padding-xl">
+      <radio-group class="block">
+        <view class="cu-list menu text-left">
+          <view class="cu-item" wx:for="{{organization}}">
+            <label class="flex justify-between align-center flex-sub">
+            <view class="flex-sub">{{item.name}}</view>
+            <radio class="round"></radio>
+            </label>
+          </view>
+        </view>
+      </radio-group>
+      <view class="action" style="margin-top: 40rpx;">
+        <button class="cu-btn line-green text-green" bindtap="hideModal">取消</button>
+        <button class="cu-btn bg-green margin-left" bindtap="toDeviceState">确定</button>
+      </view>
+      </view>
+    </view>
+  </view>  
+</view>

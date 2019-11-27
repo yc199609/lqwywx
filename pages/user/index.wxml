@@ -1,0 +1,70 @@
+<view class="content">
+  <view class="userIcon" style="display: flex;justify-content: center;background-color: #007AFF;height: 444rpx;align-items: center;">
+    <view class="myavatar"></view>
+  </view>
+  <view class="grid col-2 mycard">
+    <view class="grid-item bg-white" bindtap="handleDeviceHandover">
+      <image src="https://cdn.gosafenet.com/static/weixin/static/equipment_handover.png" mode="" class="image"></image>
+      <text class="text">设备交接</text>
+    </view>
+    <view class="grid-item bg-white" bindtap="handleChipBinding">
+      <image src="https://cdn.gosafenet.com/static/weixin/static/chip_register.png" mode="" class="image"></image>
+      <text class="text">芯片注册</text>
+    </view>
+    <view class="grid-item bg-white" bindtap="handleInstitutionsHandover">
+      <image src="https://cdn.gosafenet.com/static/weixin/static/institutions_handover.png" mode="" class="image"></image>
+      <text class="text">切换机构</text>
+    </view>
+    <view class="grid-item bg-white" bindtap="loginOut">
+      <image src="https://cdn.gosafenet.com/static/weixin/static/logout.png" mode="" class="image"></image>
+      <text class="text">退出登录</text>
+    </view>
+  </view>
+  <!--  切换机构弹框  -->
+  <view class="cu-modal {{modalName=='Modal'?'show':''}}">
+    <view class="cu-dialog">
+      <view class="cu-bar bg-white justify-end">
+        <view class="content">请选择机构</view>
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close text-red"></text>
+        </view>
+      </view>
+      <view class="padding-xl">
+      <radio-group class="block">
+        <view class="cu-list menu text-left">
+          <view class="cu-item" wx:for="{{organization}}">
+            <label class="flex justify-between align-center flex-sub">
+            <view class="flex-sub">{{item.name}}</view>
+            <radio class="round"></radio>
+            </label>
+          </view>
+        </view>
+      </radio-group>
+      <view class="action" style="margin-top: 40rpx;">
+        <button class="cu-btn line-green text-green" bindtap="hideModal">取消</button>
+        <button class="cu-btn bg-green margin-left" bindtap="toChange">确定</button>
+      </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 退出登录弹框 -->
+  <view class="cu-modal loginOut {{modalName2=='DialogModal2'?'show':''}}">
+    <view class="cu-dialog">
+      <view class="cu-bar bg-white justify-end">
+        <view class="action" bindtap="hideModal2">
+          <text class="cuIcon-close text-red"></text>
+        </view>
+      </view>
+    <view class="padding-sm content" style="padding-top: 0; padding-bottom: 50rpx;">
+      确认退出登录?
+    </view>
+      <view class="cu-bar bg-white bar">
+        <view class="action margin-0 flex-sub text-green solid-left left" bindtap="hideModal2" >取消</view>
+      <view style="height: 100rpx; width: 1px; background: #DCDDDD;"></view>
+        <view class="action margin-0 flex-sub  solid-left" bindtap="submitLoginOut">确定</view>
+      </view>
+    </view>
+  </view>
+
+</view>

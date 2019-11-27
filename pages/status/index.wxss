@@ -1,0 +1,154 @@
+.item-title {
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #888;
+}
+.curve {
+  position: absolute;
+  right: 37rpx;
+  bottom: 0;
+  color: #00A1E9;
+}
+.curve .curveImage {
+  width: 25rpx;
+  height: 22rpx;
+  display: inline-block;
+}
+.clearfix .warn-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 6rpx;
+  height: 68rpx;
+  float: left;
+  margin-left: 6rpx;
+  width: 358rpx;
+  font-size: 25rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+}
+.clearfix .warn-item:nth-of-type(2n) {
+  margin-left: 14rpx;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.align-center {
+  justify-content: center !important;
+}
+.card-item-sub-title.leftSize .sub-title-item {
+  width: 20%;
+  border-right: 2rpx solid #F1F1F1;
+}
+.card-item-sub-title.leftSize .sub-title-item:nth-of-type(-n+6) {
+  border-bottom: 2rpx solid #f1f1f1;
+}
+.card-item-sub-title.rightSize .sub-title-item {
+  width: 100%;
+}
+.card-item-sub-title.rightSize .sub-title-item:nth-of-type(1) {
+  border-bottom: 2rpx solid #f1f1f1;
+}
+.card-item-sub-title {
+  height: 250rpx;
+}
+.card-item-sub-title .item-sub-title {
+  font-weight: bold;
+}
+.card-item-sub-title .sub-title-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8rpx 0 10rpx;
+  height: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+.card-item-title {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.red {
+  color: red !important;
+}
+.leftSize {
+  width: 480rpx !important;
+  float: left;
+}
+.rightSize {
+  float: right;
+  width: 212rpx !important;
+}
+.rightSize .sub-title-item {
+  text-align: center;
+}
+.symbol {
+  font-size: 16rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #888;
+}
+.green {
+  color: #39B54A !important;
+}
+.titleCard .title {
+  position: relative;
+  text-align: center;
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #ccc;
+  height: 66rpx;
+  line-height: 66rpx;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+.titleCard .sub-title {
+  display: flex;
+  flex-direction: row;
+}
+.titleCard .sub-title .sub-title-item {
+  padding-top: 8rpx;
+  padding-bottom: 10rpx;
+  height: 124rpx;
+  text-align: center;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid #f1f1f1;
+}
+.titleCard .sub-title .sub-title-item:last-of-type {
+  border-right: none;
+}
+.titleCard .sub-title .sub-title-item .item-sub-title {
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+}
+.titleCard .sub-title .sub-title-item .smfont {
+  font-size: 21rpx;
+  color: #333333;
+}
+.mycard {
+  text-align: center;
+  background-color: white;
+  margin: 12rpx 14rpx 0;
+  width: 722rpx;
+  color: #ccc;
+}
+.myBar {
+  font-family: Source Han Sans CN;
+  font-weight: 300;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #00a0e8;
+  font-size: 40rpx;
+  color: white;
+  text-align: center;
+}

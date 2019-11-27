@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/chip_bind/index",
+    "pages/chip_bind_detail/index",
+    "pages/devices_handover/index",
+    "pages/deviceStatusList/index",
+    "pages/fault_details/index",
+    "pages/fault_list/index",
+    "pages/fault_reason/index",
+    "pages/vibration_monitoring/index",
+    "pages/vibration_curves/index",
+    "pages/user/index",
+    "pages/status/index",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0faeff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/deviceStatusList/index",
+        "text": "状态监控",
+				"iconPath": "static/status.png",
+				"selectedIconPath": "static/status_active.png"
+      },
+      {
+        "pagePath": "pages/vibration_monitoring/index",
+				"text": "震动监控",
+				"iconPath": "static/vibration.png",
+				"selectedIconPath": "static/vibration_active.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+				"text": "用户中心",
+				"iconPath": "static/user.png",
+				"selectedIconPath": "static/user_active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,40 @@
+<view>
+  <view class="device-card gray">
+    <image class="image" src="https://cdn.gosafenet.com/static/weixin/static/warn.png" mode="" ></image>
+    <view class="title">
+      安波宁德五号车间空压机
+    </view>
+    <view class="sub-title">
+      AATJ00018000810000000065
+    </view>
+  </view>
+  <view class="cu-list menu card-menu mycard margin-top">
+    <view class="cu-item arrow" bindtap="details">
+      <view class="content padding-tb-sm">
+        <view>
+          故障时间:
+        </view>
+        <view>
+          故障类型:
+        </view>
+        <view>
+          处理结果:
+        </view>
+      </view>
+    </view>
+    
+    <view class="cu-item arrow">
+      <view class="content padding-tb-sm">
+        <view>
+          故障时间:
+        </view>
+        <view>
+          故障类型:
+        </view>
+        <view>
+          处理结果:
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

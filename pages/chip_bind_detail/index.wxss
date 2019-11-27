@@ -1,0 +1,81 @@
+.picker {
+  width: 300rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.btnBox {
+  padding: 60rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.btnBox button {
+  border-radius: 0;
+  width: 30%;
+}
+.btnBox .danger {
+  background-color: red;
+  color: white;
+}
+.formtop {
+  margin-top: 100rpx;
+}
+.newChip {
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #ccc;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.myBar {
+  font-family: Source Han Sans CN;
+  font-weight: 300;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #00a0e8;
+  font-size: 40rpx;
+  color: white;
+  text-align: center;
+}
+.card {
+  background-color: white;
+  width: 736rpx;
+  margin: 14rpx auto;
+  text-align: center;
+}
+.title {
+  font-size: 32rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #ccc;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+}
+.prop {
+  margin-left: 10rpx;
+  margin-right: 16rpx;
+}
+text {
+  font-size: 26rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+.sub-title {
+  display: flex;
+  height: 132rpx;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.bandChipBox {
+  text-align: left;
+}
+.inputBox {
+  margin-bottom: 70rpx;
+  display: flex;
+  justify-content: center;
+}
+.inputBox .input {
+  border-bottom: 2rpx solid #ccc;
+  width: 300rpx;
+}

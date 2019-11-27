@@ -1,0 +1,66 @@
+.newDeviceBtn {
+  background-color: #00A0E9 !important;
+  margin-top: 100rpx;
+  border-radius: 0;
+  width: 500rpx;
+  height: 120rpx;
+  font-size: 42rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+}
+.cu-avatar {
+  left: 8rpx !important;
+  top: 8rpx !important;
+  height: 146rpx !important;
+  width: 146rpx !important;
+}
+.cu-item {
+  margin-top: 8rpx;
+  height: 170rpx !important;
+}
+.myBar {
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #00a0e8;
+  font-size: 40rpx;
+  color: white;
+  text-align: center;
+  font-family: SourceHanSansCN-Light;
+}
+.border {
+  position: absolute;
+  left: 160rpx;
+  width: 2rpx;
+  height: 146rpx;
+  top: 8rpx;
+  background-color: #bbb;
+}
+.mycard {
+  margin-top: 4rpx;
+  border-radius: 0;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.content {
+  height: 154rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  left: 176rpx !important;
+  width: calc(100% - 96rpx - 60rpx - 152rpx - 38rpx) !important;
+}
+.action {
+  width: 142rpx !important;
+}
+.btn {
+  border-radius: 0;
+  background-color: #23AC38;
+}
+.title {
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  font-size: 42rpx !important;
+}
+.sub-title {
+  font-size: 28rpx !important;
+}

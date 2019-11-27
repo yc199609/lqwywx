@@ -1,0 +1,10 @@
+<view class="content">
+  <view class="title font-gray">
+    <text>安波电机宁德五号车间空压机</text>
+    <text>前轴振动传感器</text>
+  </view>
+  <view class="sub-title font-gray">
+    <text class="text1">电量:100%</text>
+    <text>温度:50.4℃</text>
+  </view>
+</view>

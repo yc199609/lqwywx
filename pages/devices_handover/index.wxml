@@ -1,0 +1,38 @@
+<view>
+  <view class="cu-list menu-avatar card-menu mycard" style="border-radius: 0;">
+    <view class="cu-item">
+        <view class="cu-avatar" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+      <view class="border"></view>
+      <view class="content">
+        <view class="title text-grey">听诊器1</view>
+        <view class="sub-title text-gray text-sm flex">
+          <text class="text-cut">
+            423142343124232
+          </text>
+        </view>
+      </view>
+      <view class="action">
+        <button class="btn" type="primary">归还</button>
+      </view>
+    </view>
+    <view class="cu-item">
+        <view class="cu-avatar" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+      <view class="border">
+      </view>
+      <view class="content">
+        <view class="title text-grey">听诊器2</view>
+        <view class="sub-title text-gray text-sm flex">
+          <text class="text-cut">
+            423142343124232
+          </text>
+        </view>
+      </view>
+      <view class="action">
+        <button class="btn" type="primary">归还</button>
+      </view>
+    </view>
+  </view>
+  <view class="btnBox">
+    <button class="newDeviceBtn" type="primary">领用新设备</button>
+  </view>
+</view>

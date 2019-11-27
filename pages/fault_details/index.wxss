@@ -1,0 +1,28 @@
+.container {
+  height: 100%;
+  overflow: scroll;
+}
+.box {
+  margin: 15rpx;
+  background: #FFFFFF;
+}
+.box .title {
+  font-size: 29rpx;
+  color: #DDDDDE;
+  text-align: center;
+  border-bottom: 1px solid #EFEFEF;
+}
+.box .form .that {
+  padding: 10rpx 0;
+}
+.box .form .that .name {
+  font-size: 26rpx;
+  font-family: SourceHanSansCN-Medium;
+  color: #898989;
+  margin: 0 10rpx;
+}
+.box .form .that .val {
+  font-size: 26rpx;
+  font-family: SourceHanSansCN-Medium;
+  color: #3F3B3A;
+}

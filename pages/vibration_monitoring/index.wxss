@@ -1,0 +1,98 @@
+.button {
+  z-index: 4;
+  border-radius: 0;
+  padding: 0;
+  width: 180rpx;
+  height: 63rpx;
+  background-color: #00A0E9 !important;
+  font-size: 22rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+}
+.img {
+  position: absolute;
+  top: 63rpx;
+  left: 276rpx;
+  width: 188rpx;
+  height: 188rpx;
+}
+.body {
+  margin-top: 110rpx;
+}
+.itemList {
+  position: relative;
+  margin: 18rpx 7rpx;
+  width: 735rpx;
+  height: 323rpx;
+  background-color: white;
+}
+.itemList .btn5 {
+  position: absolute;
+  right: 30rpx;
+  top: 191rpx;
+}
+.itemList .btn5 > .svg5 {
+  position: absolute;
+  width: 170rpx;
+  height: 67rpx;
+  z-index: 1;
+  top: -18rpx;
+  left: -115rpx;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 172 67' xmlns='http://www.w3.org/2000/svg'%3E %3C!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ --%3E %3Cg%3E %3Cline stroke-linecap='null' stroke-linejoin='null' id='svg_20' y2='61' x2='52' y1='61' x1='169' stroke-width='4' stroke='%2300A0E9' fill='none'/%3E %3Cline stroke-linecap='null' stroke-linejoin='null' id='svg_21' y2='3' x2='3' y1='61' x1='52' stroke-width='4' stroke='%2300A0E9' fill='none'/%3E %3Cellipse ry='3' rx='3' id='svg_23' cy='3' cx='3' stroke-width='2' stroke='%23ff566d' fill='%23ff0000'/%3E %3C/g%3E %3C/svg%3E");
+}
+.itemList .btn4 {
+  position: absolute;
+  right: 30rpx;
+  top: 105rpx;
+}
+.itemList .btn4 > .svg4 {
+  height: 18rpx;
+  width: 104rpx;
+  position: absolute;
+  z-index: 1;
+  left: -92rpx;
+  top: 30rpx;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 104 18' xmlns='http://www.w3.org/2000/svg'%3E %3C!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ --%3E %3Cg%3E %3Cline stroke-linecap='undefined' stroke-linejoin='undefined' id='svg_1' y2='1' x2='29' y1='1' x1='104' stroke-width='4' stroke='%2300A0E9' fill='none'/%3E %3Cline stroke-linecap='undefined' stroke-linejoin='undefined' id='svg_2' y2='15' x2='3' y1='1' x1='29' stroke-width='4' stroke='%2300A0E9' fill='none'/%3E %3Cellipse ry='3' rx='3' id='svg_6' cy='15' cx='3' fill-opacity='null' stroke-opacity='null' stroke-width='2' stroke='%23ff566d' fill='%23ff0000'/%3E %3C/g%3E %3C/svg%3E");
+}
+.itemList .btn3 {
+  position: absolute;
+  right: 30rpx;
+  top: 19rpx;
+}
+.itemList .btn3 > .svg3 {
+  position: absolute;
+  z-index: 1;
+  left: -105rpx;
+  top: 30rpx;
+  width: 146rpx;
+  height: 68rpx;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 146 68' xmlns='http://www.w3.org/2000/svg'%3E %3C!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ --%3E %3Cg%3E %3Cline stroke-linecap='null' stroke-linejoin='null' id='svg_24' y2='1' x2='54' y1='1' x1='146' fill-opacity='null' stroke-opacity='null' stroke-width='4' stroke='%2300A0E9' fill='none'/%3E %3Cline stroke-linecap='null' stroke-linejoin='null' id='svg_27' y2='65' x2='3' y1='2' x1='54' fill-opacity='null' stroke-opacity='null' stroke-width='4' stroke='%2300A0E9' fill='none'/%3E %3Cellipse ry='3' rx='3' id='svg_28' cy='65' cx='3' stroke-opacity='null' stroke-width='4' stroke='%23ff566d' fill='%23ff0000'/%3E %3C/g%3E %3C/svg%3E");
+}
+.itemList .btn2 {
+  position: absolute;
+  z-index: 3;
+  left: 20rpx;
+  bottom: 76rpx;
+}
+.itemList .btn2 > .svg2 {
+  z-index: 1;
+  position: absolute;
+  height: 113rpx;
+  width: 134rpx;
+  top: 13rpx;
+  left: 153rpx;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 134 113' xmlns='http://www.w3.org/2000/svg'%3E %3C!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ --%3E %3Cg%3E %3Cline stroke-linecap='null' stroke-linejoin='null' id='svg_11' y2='19' x2='59' y1='19' x1='0' fill-opacity='null' stroke-opacity='null' stroke-width='4' stroke='%2300A0E9' fill='none'/%3E %3Cline stroke-linecap='null' stroke-linejoin='null' id='svg_12' y2='3' x2='131' y1='19' x1='59' fill-opacity='null' stroke-opacity='null' stroke-width='4' stroke='%2300A0E9' fill='none'/%3E %3Cellipse ry='3' rx='3' id='svg_17' cy='3' cx='131' stroke-width='2' stroke='%23ff566d' fill='%23ff0000'/%3E %3C/g%3E %3C/svg%3E");
+}
+.itemList .btn1 {
+  position: absolute;
+  left: 20rpx;
+  top: 19rpx;
+}
+.itemList .btn1 > .svg1 {
+  position: absolute;
+  left: 123rpx;
+  top: 38rpx;
+  height: 113rpx;
+  width: 196rpx;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 196 113'%3E %3Cg%3E %3Cline stroke-linecap='undefined' stroke-linejoin='undefined' id='svg_1' y2='10' x2='94' y1='10' x1='0' stroke-width='4' stroke='%2300A0E9' fill='none'/%3E %3Cline stroke-linecap='undefined' stroke-linejoin='undefined' id='svg_2' y2='107' x2='191' y1='10' x1='94' stroke-width='4' stroke='%2300A0E9' fill='none'/%3E %3Cellipse ry='3' rx='3' id='svg_4' cy='107' cx='191' stroke-width='2' stroke='%23ff566d' fill='%23ff0000'/%3E %3C/g%3E %3C/svg%3E");
+}

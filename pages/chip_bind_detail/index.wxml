@@ -1,0 +1,58 @@
+<view>
+  <view class="card">
+    <view class="solids-bottom title">
+      设备信息
+    </view>
+    <view class="solids-bottom sub-title">
+      <view>
+        <text class="prop">设备名称:</text>
+        <text style="font-weight: bold;">南方泵业宿舍1号水泵</text>
+      </view>
+      <view>
+        <text class="prop">设备编号:</text>
+        <text style="font-weight: bold;">AATJ00018000810000000087</text>
+      </view>
+    </view>
+    <view class="solids-bottom bandChipBox">
+      <view class="">
+        <text class="prop">已绑芯片:</text>
+      </view>
+      
+      <view class="cu-form-group">
+        <view class="grid col-4 grid-square flex-sub">
+          <view class="bg-img" wx:for="imgList" bindtap="ViewImage" data-url="{{imgList[index]}}">
+           <image src="{{imgList[index]}}" mode="aspectFill"></image>
+            <view class="cu-tag bg-red" bindtap="DelImg" data-index="{{index}}">
+              <text class='cuIcon-close'></text>
+            </view>
+          </view>
+          <view class="solids" bindtap="ChooseImage" wx-if="{{imgList.length<4}}">
+            <text class='cuIcon-cameraadd'></text>
+          </view>
+        </view>
+      </view>
+      
+    </view>
+    <view class="solids-bottom newChip">
+      新增绑定芯片
+    </view>
+    <form>
+      <view class="inputBox formtop">
+        <view style="color: #ccc;">芯片编号</view>
+        <input class="input"></input>
+      </view>
+      <view class="inputBox">
+        <view style="color: #ccc;">安装位置</view>
+        <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+          <view class="picker">
+            {{index>-1?picker[index]:'请选择'}}
+          </view>
+        </picker>
+      </view>
+      <view class="btnBox">
+        <button type="primary">确定</button>
+        <button class="danger">取消</button>
+      </view>
+    </form>
+  </view>
+</view>

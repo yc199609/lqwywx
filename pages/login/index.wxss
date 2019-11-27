@@ -1,0 +1,96 @@
+.main {
+  background: #F7F7F8;
+  width: 100%;
+  height: 100%;
+}
+.main .header {
+  width: 100%;
+  height: 446rpx;
+  background-image: url('https://cdn.gosafenet.com/static/weixin/static/login/login.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+.main .header .title {
+  padding: 116rpx 322rpx 0 322rpx;
+  font-size: 38rpx;
+}
+.main .header .img {
+  margin: 18rpx 306rpx 0 306rpx;
+  width: 139rpx;
+  height: 173rpx;
+  background-image: url('https://cdn.gosafenet.com/static/weixin/static/login/login-circle.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.main .header .img image {
+  width: 72rpx;
+  margin: 41rpx 33rpx;
+}
+.main .login {
+  background: #FFFFFF;
+  width: 621rpx;
+  height: 583rpx;
+  margin: auto;
+  margin-top: -50rpx;
+  padding: 0;
+}
+.main .login .cu-form-group {
+  margin: 0 32rpx !important;
+}
+.main .login .cu-form-group .inpImg {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 101rpx;
+}
+.main .login .img {
+  width: 129rpx;
+  height: 129rpx;
+  margin: 109rpx 246rpx 37rpx 246rpx;
+}
+.main .login .name {
+  font-size: 59rpx;
+  line-height: 59rpx;
+  text-align: center;
+}
+.main .login button {
+  background: #00A1E9;
+  color: #FFFFFF;
+  width: 568rpx;
+  height: 101rpx;
+}
+.tips {
+  position: absolute;
+  font-size: 24rpx;
+  margin: 25rpx 150rpx;
+  color: #CACACB;
+}
+.bottomBox {
+  margin: 250rpx 31rpx 0 31rpx;
+}
+.bottomBox .line {
+  width: 100%;
+  height: 1px;
+  background: #C9CACA;
+}
+.bottomBox .text {
+  width: 100%;
+  height: 0.5px;
+  background: #F8F8F8;
+  font-size: 24rpx;
+  color: #CACACB;
+  background: #F1F1F1;
+  text-align: center;
+  margin-top: -20rpx;
+}
+.bottomBox .text text {
+  background: #F1F1F1;
+  padding: 0 10rpx;
+}
+.bottomBox .img {
+  text-align: center;
+  margin-top: 45rpx;
+}
+.bottomBox .img image {
+  width: 54rpx;
+}

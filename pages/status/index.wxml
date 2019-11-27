@@ -1,0 +1,220 @@
+<view class="clearfix" style="position: relative;">
+  <view class="mycard">
+    <view class="titleCard">
+      <view class="title">
+        <text>南方泵业宿舍1号水泵</text>
+        <view class="curve" bindtap="handleCurve">
+          <image src="https://cdn.gosafenet.com/static/weixin/static/curve.png" mode="" class="curveImage"></image>
+          <text>曲线视图</text>
+        </view>
+      </view>
+      <view class="sub-title">
+        <view class="sub-title-item">
+          <text class="item-title">运行状态</text>
+          <text class="item-sub-title green smfont">运行</text>
+        </view>
+        <view class="sub-title-item">
+          <text class="item-title">功率因数</text>
+          <text class="item-sub-title smfont">0.84</text>
+        </view>
+        <view class="sub-title-item">
+          <view>
+            <view class="item-title">
+              运行时长
+            </view>
+            <view class="symbol">
+              (H)
+            </view>
+          </view>
+          <view class="item-sub-title smfont">
+            70000
+          </view>
+        </view>
+        <view class="sub-title-item">
+          <view>
+            <view class="item-title">
+              消耗电量
+            </view>
+            <view class="symbol">
+              (Kw/H)
+            </view>
+          </view>
+          <view class="item-sub-title smfont">
+            3333333.3
+          </view>
+        </view>
+        
+        <view class="sub-title-item">
+          <text class="item-title">数据更新时间</text>
+          <view>
+            <view class="item-sub-title smfont">
+              2019-08-07
+            </view>
+            <view class="item-sub-title smfont">
+              17:26
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+	<!-- 电流 -->
+  <view class="clearfix">
+    <view class="mycard leftSize">
+      <view class="titleCard">
+        <view class="title">
+          <text>电流(A)</text>
+        </view>
+        <view class="sub-title">
+          <view class="sub-title-item">
+            <text class="item-title">A相</text>
+            <text class="item-sub-title red">43.0</text>
+          </view>
+          <view class="sub-title-item">
+            <text class="item-title">B相</text>
+            <text class="item-sub-title green">30.0</text>
+          </view>
+          <view class="sub-title-item">
+            <text class="item-title">C相</text>
+            <text class="item-sub-title green">31.0</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    
+    <view class="mycard rightSize">
+      <view class="titleCard">
+        <view class="title">
+          <text>电源频率(Hz)</text>
+        </view>
+        <view class="sub-title">
+          <view class="sub-title-item align-center">
+            <text class="item-sub-title green">115.0</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+	<!-- 电压 -->
+  <view class="clearfix">
+    <view class="mycard leftSize">
+      <view class="titleCard">
+        <view class="title">
+          <text>电压(V)</text>
+        </view>
+        <view class="sub-title">
+          <view class="sub-title-item">
+            <text class="item-title">A相</text>
+            <text class="item-sub-title green">380</text>
+          </view>
+          <view class="sub-title-item">
+            <text class="item-title">B相</text>
+            <text class="item-sub-title red">403.5</text>
+          </view>
+          <view class="sub-title-item">
+            <text class="item-title">C相</text>
+            <text class="item-sub-title green">385.2</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    
+    <view class="mycard rightSize">
+      <view class="titleCard">
+        <view class="title">
+          <text>流量(m3/h)</text>
+        </view>
+        <view class="sub-title">
+          <view class="sub-title-item align-center">
+            <text class="item-sub-title green">10000</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+	<!-- 2个标题 -->
+  <view class="clearfix">
+    <view class="mycard leftSize card-item-title">
+      温度(℃)
+    </view>
+    <view class="mycard rightSize card-item-title">
+      压力(MPa)
+    </view>
+  </view>
+	<!-- 2组数据 -->
+  <view class="clearfix">
+    <view class="mycard leftSize card-item-sub-title">
+      <view class="sub-title-item">
+        <text class="item-title">接线盒</text>
+        <text class="item-sub-title green">38.2</text>
+      </view>
+      <view class="sub-title-item">
+        <text class="item-title">前轴</text>
+        <text class="item-sub-title green">34.7</text>
+      </view>
+      <view class="sub-title-item">
+        <text class="item-title">后轴</text>
+        <text class="item-sub-title green">39.1</text>
+      </view>
+      <view class="sub-title-item">
+        <text class="item-title">U定子</text>
+        <text class="item-sub-title green">36.6</text>
+      </view>
+      <view class="sub-title-item">
+        <text class="item-title">V定子</text>
+        <text class="item-sub-title green">36.6</text>
+      </view>
+      <view class="sub-title-item">
+        <text class="item-title">W定子</text>
+        <text class="item-sub-title green">34.2</text>
+      </view>
+      <view class="sub-title-item">
+        <text class="item-title">泵前轴承</text>
+        <text class="item-sub-title red">39.1</text>
+      </view>
+      <view class="sub-title-item">
+        <text class="item-title">泵后轴承</text>
+        <text class="item-sub-title green">39.1</text>
+      </view>
+      <view class="sub-title-item">
+        <text class="item-title">前轴1</text>
+        <text class="item-sub-title green">36.6</text>
+      </view>
+      <view class="sub-title-item">
+        <text class="item-title">前轴2</text>
+        <text class="item-sub-title green">36.6</text>
+      </view>
+    </view>
+    
+    <view class="mycard rightSize card-item-sub-title">
+      <view class="sub-title-item">
+        <text class="item-title">入口</text>
+        <text class="item-sub-title green">10000</text>
+      </view>
+      <view class="sub-title-item">
+        <text class="item-title">出口</text>
+        <text class="item-sub-title green">10000</text>
+      </view>
+    </view>
+  </view>
+		
+  <view class="clearfix">
+    <view class="mycard card-item-title">
+      报警信息
+    </view>
+    <view class="warn-item">
+      <image src="https://cdn.gosafenet.com/static/weixin/static/light.png" mode="" style="width: 32rpx;height: 34rpx;margin-right: 10rpx;"></image>
+      <text>A相电流过流</text>
+    </view>
+    <view class="warn-item">
+      <image src="https://cdn.gosafenet.com/static/weixin/static/light.png" mode="" style="width: 32rpx;height: 34rpx;margin-right: 10rpx;"></image>
+      <text>A相电流过流</text>
+    </view>
+    <view class="warn-item">
+      <image src="https://cdn.gosafenet.com/static/weixin/static/light.png" mode="" style="width: 32rpx;height: 34rpx;margin-right: 10rpx;"></image>
+      <text>A相电流过流</text>
+    </view>
+  </view>
+		
+	<image bindtap="handleWarn" src="https://cdn.gosafenet.com/static/weixin/static/setting.png" mode="widthFix" style="width: 107rpx;position: fixed;right: 24rpx;bottom: 12rpx;"></image>
+</view>

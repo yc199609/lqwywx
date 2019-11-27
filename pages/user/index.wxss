@@ -1,0 +1,43 @@
+.myavatar {
+  border-radius: 50%;
+  width: 160rpx;
+  height: 160rpx;
+  background-color: green;
+}
+.bg-white {
+  background-color: white;
+}
+.image {
+  width: 76rpx;
+  height: 77rpx;
+  margin-right: 10rpx;
+}
+.text {
+  font-size: 42rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #B5B5B6;
+}
+.grid .grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 281.5rpx;
+}
+.grid .grid-item:nth-of-type(-n+2) {
+  border-bottom: 4rpx solid #f1f1f1;
+}
+.grid .grid-item:nth-of-type(2n) {
+  border-left: 4rpx solid #f1f1f1;
+}
+.mycard {
+  width: 736rpx;
+  margin: 117rpx auto 0;
+}
+.avatar {
+  position: absolute;
+  top: 112rpx;
+  margin: 0 auto;
+  background-image: url(https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg);
+}

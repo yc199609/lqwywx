@@ -1,0 +1,72 @@
+<view>
+		<!-- 搜索框 -->
+		<view class="cu-bar bg-white search fixed" style="top:0rpx;">
+			<view class="search-form round">
+				<text class="cuIcon-search"></text>
+				<input bindinput="bindKeyInput" type="text" placeholder="输入搜索的关键词" confirm-type="search" style="padding-left: 20rpx;"></input>
+			</view>
+			<view class="action">
+				<button bindTap="search" class="cu-btn bg-gradual-green shadow-blur round">搜索</button>
+			</view>
+		</view>
+		
+		<view class="body">
+			<!-- 第一个 -->
+			<view class="itemList">
+				<image src="https://cdn.gosafenet.com/static/weixin/static/资源1.png" mode="widthFix"  class="img"></image>
+				<view class="btn1">
+					<button class="button" type="primary" bindtap="handleCurves">电机前轴传感器</button>
+					<view class="svg1"></view>
+				</view>
+				<view class="btn2">
+					<button class="button" type="primary">水泵前轴传感器</button>
+					<view class="svg2"></view>
+				</view>
+				
+				<view class="btn3">
+					<button class="button" type="primary">电机后轴传感器</button>
+					<view class="svg3"></view>
+				</view>
+				
+				<view class="btn4">
+					<button class="button" type="primary">水泵后轴传感器</button>
+					<view class="svg4"></view>
+				</view>
+				
+				<view class="btn5">
+					<button class="button" type="primary">采集点</button>
+					<view class="svg5"></view>
+				</view>
+			</view>
+			<!-- 第二个 -->
+			<view class="itemList">
+				<image src="https://cdn.gosafenet.com/static/weixin/static/资源1.png" mode="widthFix"  class="img"></image>
+				<view class="btn1">
+					<button class="button" type="primary">电机前轴传感器</button>
+					<view class="svg1"></view>
+				</view>
+				<view class="btn2">
+					<button class="button" type="primary">水泵前轴传感器</button>
+					<view class="svg2"></view>
+				</view>
+				
+				<view class="btn3">
+					<button class="button" type="primary">电机后轴传感器</button>
+					<view class="svg3"></view>
+				</view>
+				
+				<view class="btn4">
+					<button class="button" type="primary">水泵后轴传感器</button>
+					<view class="svg4"></view>
+				</view>
+				
+				<view class="btn5">
+					<button class="button" type="primary">采集点</button>
+					<view class="svg5"></view>
+				</view>
+			</view>
+			
+		</view>
+		
+		
+	</view>

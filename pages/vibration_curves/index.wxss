@@ -1,0 +1,28 @@
+.content {
+  background-color: white !important;
+  height: 100%;
+}
+.title {
+  width: 711rpx;
+  padding-top: 12rpx;
+  margin-left: 21rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+}
+.sub-title {
+  width: 711rpx;
+  margin-top: 38rpx;
+  margin-left: 21rpx;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+}
+.sub-title .text1 {
+  margin-right: 41rpx;
+}
+.font-gray {
+  color: #B5B6B6;
+}

@@ -1,0 +1,24 @@
+<view class='list_box' wx:for='{{list}}' wx:for-item='parentItem' wx:for-index='parentIndex' >
+  <view class='list'>
+    <view class='list_name_box' catchtap='listTap' data-parentindex='{{parentIndex}}'>
+      <text class='list_item_name'>{{parentItem.listName}}</text>
+      <text wx:if='{{parentItem.show}}' class="icon panel-icon cuIcon-unfold lg text-gray icon_down"></text>
+      <text wx:else='{{parentItem.show}}' class="icon panel-icon cuIcon-right lg text-gray icon_down"></text>
+    </view>
+    <view class='list_item_box' wx:if='{{parentItem.show}}'>
+      <view class="navigate-item" wx:for="{{parentItem.item}}" wx:for-item="item2"  bindtap="chooseDevice" data-device="{{item2}}">
+        <view class="img">
+          <span>在线</span>
+          <image src="https://cdn.gosafenet.com/static/weixin/static/device.png" alt=""  />
+        </view>
+        <view class="line"></view>
+        <view class="info">
+          <span class="title">设备名称:{{item2.itemName}}</span> 
+          <span class="status">状态:{{item2.content}}</span>
+          <span class="tips">设备描述:{{item2.time}}</span>
+        </view>
+        <text class="icon panel-icon cuIcon-right lg text-gray"></text>
+      </view>
+    </view>
+  </view>
+</view>

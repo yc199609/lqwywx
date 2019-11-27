@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="add">
+    <button class="cu-btn line-gray">
+      <text class="cuIcon-roundadd"></text>  新增故障原因
+    </button>
+  </view>
+  
+  <radio-group class="block">
+    <view class="cu-list menu text-left">
+      <view class="cu-item" wx:for="{{reason}}">
+        <label class="flex justify-between align-center flex-sub">
+          <view class="flex-sub reasonVal">{{item.name}}</view>
+          <radio class="round"></radio>
+        </label>
+      </view>
+    </view>
+  </radio-group>
+  
+  <view class="ok">
+    <button class="cu-btn bg-blue lg">确认</button>
+  </view>
+</view>

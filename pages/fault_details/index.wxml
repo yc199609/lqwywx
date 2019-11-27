@@ -1,0 +1,76 @@
+<view class="container">
+  <view class="box radius">
+    <view class="title">故障信息</view>
+    <view class="form">
+      <view class="flex p-xs mb-sm that">
+        <view class="flex-sub" style="border-right: 1px solid #EFEFEF;">
+          <text class="name">故障类型:</text>
+          <text class="val" style="color: #E83928;">报警</text>
+        </view>
+        <view class="flex-twice">
+          <text class="name">故障时间:</text>
+          <text class="val">2019-08-19 15:59:52</text>
+        </view>
+      </view>
+      
+      <view class="that" style="border-top: 1px solid #EFEFEF;border-bottom: 1px solid #EFEFEF;">
+        <text class="name">设备名称:</text>
+        <text class="val">87号</text>
+      </view>
+      
+      <view class="that flex">
+        <text class="name flex-sub">故障症状:</text>
+        <text class="val flex-treble">
+          <view>1、泵出口工作扬程太低 (1分钟)</view>
+          <view>2、泵出口工作扬程太高 (3分钟)</view>
+          <view>3、A相温度过高 (5分钟)</view>
+        </text>
+      </view>
+      
+      <view class="that flex">
+        <text class="name flex-sub">故障推测:</text>
+        <text class="val flex-treble">
+          <view>1、实际工作点不在对应的流量扬程图片的位置</view>
+          <view>2、进口管道或者叶轮堵塞</view>
+        </text>
+      </view>
+      
+      <view class="that flex">
+        <text class="name flex-sub">责任员工:</text>
+        <text class="val flex-treble">
+          <view class="cu-tag round sm line-olive">维保人员1</view>
+          <view class="cu-tag round sm line-olive">维保人员2</view>
+          <view class="cu-tag round sm line-olive">维保人员3</view>
+          <view class="cu-tag round sm line-olive">维保人员4</view>
+        </text>
+      </view>
+      
+    </view>
+  </view>
+  
+  <view class="box">
+    <view class="title">处理记录</view>
+    <view class="cu-timeline">
+      <view class="cu-time">06-17</view>
+      
+      <view class="cu-item text-blue">
+        123
+      </view>
+      
+      <view class="cu-item">
+        <view class="content">
+          <view class="cu-capsule radius">
+            <view class="cu-tag bg-cyan">2019-10-28</view>
+            <view class="cu-tag line-cyan">14:48:39</view>
+          </view>
+          <view class="margin-top">xxx处理故障</view>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+  
+  <view style="text-align: center;">
+    <button class="cu-btn bg-gradual-blue margin-tb-sm lg" bindtap="handle"> 故障处理 </button>
+  </view>
+</view>

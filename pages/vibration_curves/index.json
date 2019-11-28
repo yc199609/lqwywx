@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText":"设备震动监控"
+  "navigationBarTitleText":"设备震动监控",
+  "usingComponents": {
+    "ff-canvas": "@antv/f2-canvas"
+  }
 }

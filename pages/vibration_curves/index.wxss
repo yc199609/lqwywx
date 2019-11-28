@@ -1,6 +1,6 @@
 .content {
   background-color: white !important;
-  height: 100%;
+  min-height: 100vh;
 }
 .title {
   width: 711rpx;
@@ -25,4 +25,15 @@
 }
 .font-gray {
   color: #B5B6B6;
+}
+ff-canvas {
+  width: 100%;
+  height: 450rpx;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
 }

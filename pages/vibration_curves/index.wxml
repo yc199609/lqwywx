@@ -7,4 +7,12 @@
     <text class="text1">电量:100%</text>
     <text>温度:50.4℃</text>
   </view>
+  <view class="container">
+    <ff-canvas id="area" canvas-id="area" opts="{{ opts }}" ></ff-canvas>
+  </view>
+  <view class="font-gray" style="text-align: center;">音频</view>
+  <view class="container">
+    <ff-canvas id="area2" canvas-id="area2" opts="{{ opts2 }}" ></ff-canvas>
+  </view>
+  <view class="font-gray" style="text-align: center;">振动</view>
 </view>

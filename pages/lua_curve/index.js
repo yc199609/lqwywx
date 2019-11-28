@@ -1,266 +1,134 @@
-import F2 from '../../f2-canvas/lib/f2';
-// const data = require('../../static/data/lua_curve.js/index.js')
-
-function initChart(canvas, width, height) {
-  const data = [
-    {
-      "date": "2017-06-05",
-      "value": 116
-    },
-    {
-      "date": "2017-06-06",
-      "value": 129
-    },
-    {
-      "date": "2017-06-07",
-      "value": 135
-    },
-    {
-      "date": "2017-06-08",
-      "value": 86
-    },
-    {
-      "date": "2017-06-09",
-      "value": 73
-    },
-    {
-      "date": "2017-06-10",
-      "value": 85
-    },
-    {
-      "date": "2017-06-11",
-      "value": 73
-    },
-    {
-      "date": "2017-06-12",
-      "value": 68
-    },
-    {
-      "date": "2017-06-13",
-      "value": 92
-    },
-    {
-      "date": "2017-06-14",
-      "value": 130
-    },
-    {
-      "date": "2017-06-15",
-      "value": 245
-    },
-    {
-      "date": "2017-06-16",
-      "value": 139
-    },
-    {
-      "date": "2017-06-17",
-      "value": 115
-    },
-    {
-      "date": "2017-06-18",
-      "value": 111
-    },
-    {
-      "date": "2017-06-19",
-      "value": 309
-    },
-    {
-      "date": "2017-06-20",
-      "value": 206
-    },
-    {
-      "date": "2017-06-21",
-      "value": 137
-    },
-    {
-      "date": "2017-06-22",
-      "value": 128
-    },
-    {
-      "date": "2017-06-23",
-      "value": 85
-    },
-    {
-      "date": "2017-06-24",
-      "value": 94
-    },
-    {
-      "date": "2017-06-25",
-      "value": 71
-    },
-    {
-      "date": "2017-06-26",
-      "value": 106
-    },
-    {
-      "date": "2017-06-27",
-      "value": 84
-    },
-    {
-      "date": "2017-06-28",
-      "value": 93
-    },
-    {
-      "date": "2017-06-29",
-      "value": 85
-    },
-    {
-      "date": "2017-06-30",
-      "value": 73
-    },
-    {
-      "date": "2017-07-01",
-      "value": 83
-    },
-    {
-      "date": "2017-07-02",
-      "value": 125
-    },
-    {
-      "date": "2017-07-03",
-      "value": 107
-    },
-    {
-      "date": "2017-07-04",
-      "value": 82
-    },
-    {
-      "date": "2017-07-05",
-      "value": 44
-    },
-    {
-      "date": "2017-07-06",
-      "value": 72
-    },
-    {
-      "date": "2017-07-07",
-      "value": 106
-    },
-    {
-      "date": "2017-07-08",
-      "value": 107
-    },
-    {
-      "date": "2017-07-09",
-      "value": 66
-    },
-    {
-      "date": "2017-07-10",
-      "value": 91
-    },
-    {
-      "date": "2017-07-11",
-      "value": 92
-    },
-    {
-      "date": "2017-07-12",
-      "value": 113
-    },
-    {
-      "date": "2017-07-13",
-      "value": 107
-    },
-    {
-      "date": "2017-07-14",
-      "value": 131
-    },
-    {
-      "date": "2017-07-15",
-      "value": 111
-    },
-    {
-      "date": "2017-07-16",
-      "value": 64
-    },
-    {
-      "date": "2017-07-17",
-      "value": 69
-    },
-    {
-      "date": "2017-07-18",
-      "value": 88
-    },
-    {
-      "date": "2017-07-19",
-      "value": 77
-    },
-    {
-      "date": "2017-07-20",
-      "value": 83
-    },
-    {
-      "date": "2017-07-21",
-      "value": 111
-    },
-    {
-      "date": "2017-07-22",
-      "value": 57
-    },
-    {
-      "date": "2017-07-23",
-      "value": 55
-    },
-    {
-      "date": "2017-07-24",
-      "value": 60
-    }
+function initChart(canvas, width, height, F2) {
+  const arr = [
+    { type: "湿度/%", value: 66.4, date: "2018-06-01 10:04:00" },{ type: "温度/℃", value: 24.8, date: "2018-06-01 10:04:00" },
+    { type: "湿度/%", value: 66.9, date: "2018-06-01 10:05:00" },{ type: "温度/℃", value: 24.6, date: "2018-06-01 10:05:00" },
+    { type: "湿度/%", value: 68.7, date: "2018-06-01 10:06:00" },{ type: "温度/℃", value: 24.5, date: "2018-06-01 10:06:00" },
+    { type: "湿度/%", value: 68, date: "2018-06-01 10:07:00" },{ type: "温度/℃", value: 24.4, date: "2018-06-01 10:07:00" },
+    { type: "湿度/%", value: 68.3, date: "2018-06-01 10:08:00" },{ type: "温度/℃", value: 24.2, date: "2018-06-01 10:08:00" },
+    { type: "湿度/%", value: 68.5, date: "2018-06-01 10:09:00" },{ type: "温度/℃", value: 24.1, date: "2018-06-01 10:09:00" },
+    { type: "湿度/%", value: 68.9, date: "2018-06-01 10:10:00" },{ type: "温度/℃", value: 24, date: "2018-06-01 10:10:00" },
+    { type: "湿度/%", value: 69.3, date: "2018-06-01 10:11:00" },{ type: "温度/℃", value: 23.9, date: "2018-06-01 10:11:00" },
+    { type: "湿度/%", value: 69.6, date: "2018-06-01 10:12:00" },{ type: "温度/℃", value: 23.8, date: "2018-06-01 10:12:00" },
+    { type: "湿度/%", value: 69.7, date: "2018-06-01 10:13:00" },{ type: "温度/℃", value: 23.7, date: "2018-06-01 10:13:00" },
+    { type: "湿度/%", value: 69.9, date: "2018-06-01 10:14:00" },{ type: "温度/℃", value: 23.6, date: "2018-06-01 10:14:00" },
+    { type: "湿度/%", value: 70.3, date: "2018-06-01 10:15:00" },{ type: "温度/℃", value: 23.5, date: "2018-06-01 10:15:00" },
+    { type: "湿度/%", value: 70.4, date: "2018-06-01 10:16:00" },{ type: "温度/℃", value: 23.5, date: "2018-06-01 10:16:00" },
+    { type: "湿度/%", value: 70.7, date: "2018-06-01 10:17:00" },{ type: "温度/℃", value: 23.4, date: "2018-06-01 10:17:00" },
+    { type: "湿度/%", value: 70.6, date: "2018-06-01 10:18:00" },{ type: "温度/℃", value: 23.4, date: "2018-06-01 10:18:00" },
+    { type: "湿度/%", value: 70.9, date: "2018-06-01 10:19:00" },{ type: "温度/℃", value: 23.3, date: "2018-06-01 10:19:00" },
+    { type: "湿度/%", value: 71.1, date: "2018-06-01 10:20:00" },{ type: "温度/℃", value: 23.3, date: "2018-06-01 10:20:00" },
+    { type: "湿度/%", value: 71.1, date: "2018-06-01 10:21:00" },{ type: "温度/℃", value: 23.3, date: "2018-06-01 10:21:00" },
+    { type: "湿度/%", value: 72.8, date: "2018-06-01 10:22:00" },{ type: "温度/℃", value: 23.4, date: "2018-06-01 10:22:00" },
+    { type: "湿度/%", value: 71.7, date: "2018-06-01 10:23:00" },{ type: "温度/℃", value: 23.5, date: "2018-06-01 10:23:00" },
+    { type: "湿度/%", value: 71.1, date: "2018-06-01 10:24:00" },{ type: "温度/℃", value: 23.6, date: "2018-06-01 10:24:00" },
+    { type: "湿度/%", value: 72, date: "2018-06-01 10:25:00" },{ type: "温度/℃", value: 24.1, date: "2018-06-01 10:25:00" },
+    { type: "湿度/%", value: null, date: "2018-06-01 10:26:00" },{ type: "温度/℃", value: null, date: "2018-06-01 10:26:00" },
+    { type: "湿度/%", value: null, date: "2018-06-01 10:27:00" },{ type: "温度/℃", value: null, date: "2018-06-01 10:27:00" },
+    { type: "湿度/%", value: null, date: "2018-06-01 10:28:00" },{ type: "温度/℃", value: null, date: "2018-06-01 10:28:00" },
+    { type: "湿度/%", value: null, date: "2018-06-01 10:29:00" },{ type: "温度/℃", value: null, date: "2018-06-01 10:29:00" },
+    { type: "湿度/%", value: 67.7, date: "2018-06-01 10:30:00" },{ type: "温度/℃", value: 24.8, date: "2018-06-01 10:30:00" },
+    { type: "湿度/%", value: 67.4, date: "2018-06-01 10:31:00" },{ type: "温度/℃", value: 24.8, date: "2018-06-01 10:31:00" },
+    { type: "湿度/%", value: 67.9, date: "2018-06-01 10:32:00" },{ type: "温度/℃", value: 24.7, date: "2018-06-01 10:32:00" },
+    { type: "湿度/%", value: 68, date: "2018-06-01 10:33:00" },{ type: "温度/℃", value: 24.6, date: "2018-06-01 10:33:00" },
+    { type: "湿度/%", value: 69, date: "2018-06-01 10:34:00" },{ type: "温度/℃", value: 24.4, date: "2018-06-01 10:34:00" },
+    { type: "湿度/%", value: 68.7, date: "2018-06-01 10:35:00" },{ type: "温度/℃", value: 24.4, date: "2018-06-01 10:35:00" },
+    { type: "湿度/%", value: 68.8, date: "2018-06-01 10:36:00" },{ type: "温度/℃", value: 24.3, date: "2018-06-01 10:36:00" },
+    { type: "湿度/%", value: 69, date: "2018-06-01 10:37:00" },{ type: "温度/℃", value: 24.1, date: "2018-06-01 10:37:00" },
+    { type: "湿度/%", value: 69.3, date: "2018-06-01 10:38:00" },{ type: "温度/℃", value: 24, date: "2018-06-01 10:38:00" },
+    { type: "湿度/%", value: 69.5, date: "2018-06-01 10:39:00" },{ type: "温度/℃", value: 23.9, date: "2018-06-01 10:39:00" },
+    { type: "湿度/%", value: 69.6, date: "2018-06-01 10:40:00" },{ type: "温度/℃", value: 23.8, date: "2018-06-01 10:40:00" },
+    { type: "湿度/%", value: 69.8, date: "2018-06-01 10:41:00" },{ type: "温度/℃", value: 23.8, date: "2018-06-01 10:41:00" },
+    { type: "湿度/%", value: 69.9, date: "2018-06-01 10:42:00" },{ type: "温度/℃", value: 23.7, date: "2018-06-01 10:42:00" },
+    { type: "湿度/%", value: 70, date: "2018-06-01 10:43:00" },{ type: "温度/℃", value: 23.7, date: "2018-06-01 10:43:00" },
+    { type: "湿度/%", value: 70.1, date: "2018-06-01 10:44:00" },{ type: "温度/℃", value: 23.6, date: "2018-06-01 10:44:00" },
+    { type: "湿度/%", value: 70.2, date: "2018-06-01 10:45:00" },{ type: "温度/℃", value: 23.6, date: "2018-06-01 10:45:00" },
+    { type: "湿度/%", value: 70.2, date: "2018-06-01 10:46:00" },{ type: "温度/℃", value: 23.5, date: "2018-06-01 10:46:00" },
+    { type: "湿度/%", value: 70.3, date: "2018-06-01 10:47:00" },{ type: "温度/℃", value: 23.5, date: "2018-06-01 10:47:00" },
+    { type: "湿度/%", value: 70.3, date: "2018-06-01 10:48:00" },{ type: "温度/℃", value: 23.5, date: "2018-06-01 10:48:00" },
+    { type: "湿度/%", value: 70.3, date: "2018-06-01 10:49:00" },{ type: "温度/℃", value: 23.5, date: "2018-06-01 10:49:00" },
+    { type: "湿度/%", value: 70.4, date: "2018-06-01 10:50:00" },{ type: "温度/℃", value: 23.5, date: "2018-06-01 10:50:00" },
+    { type: "湿度/%", value: 70.4, date: "2018-06-01 10:51:00" },{ type: "温度/℃", value: 23.5, date: "2018-06-01 10:51:00" },
+    { type: "湿度/%", value: 70.3, date: "2018-06-01 10:52:00" },{ type: "温度/℃", value: 23.5, date: "2018-06-01 10:52:00" },
+    { type: "湿度/%", value: 70.3, date: "2018-06-01 10:53:00" },{ type: "温度/℃", value: 23.5, date: "2018-06-01 10:53:00" },
+    { type: "湿度/%", value: 70.2, date: "2018-06-01 10:54:00" },{ type: "温度/℃", value: 23.5, date: "2018-06-01 10:54:00" },
+    { type: "湿度/%", value: 70.2, date: "2018-06-01 10:55:00" },{ type: "温度/℃", value: 23.4, date: "2018-06-01 10:55:00" },
+    { type: "湿度/%", value: 70.2, date: "2018-06-01 10:56:00" },{ type: "温度/℃", value: 23.4, date: "2018-06-01 10:56:00" },
+    { type: "湿度/%", value: 70.2, date: "2018-06-01 10:57:00" },{ type: "温度/℃", value: 23.4, date: "2018-06-01 10:57:00" },
+    { type: "湿度/%", value: 70.1, date: "2018-06-01 10:58:00" },{ type: "温度/℃", value: 23.4, date: "2018-06-01 10:58:00" },
+    { type: "湿度/%", value: 70.2, date: "2018-06-01 10:59:00" },{ type: "温度/℃", value: 23.4, date: "2018-06-01 10:59:00" },
+    { type: "湿度/%", value: 70.1, date: "2018-06-01 11:00:00" },{ type: "温度/℃", value: 23.3, date: "2018-06-01 11:00:00" },
+    { type: "湿度/%", value: 70, date: "2018-06-01 11:01:00" },{ type: "温度/℃", value: 23.3, date: "2018-06-01 11:01:00" },
+    { type: "湿度/%", value: 70, date: "2018-06-01 11:02:00" },{ type: "温度/℃", value: 23.4, date: "2018-06-01 11:02:00" },
+    { type: "湿度/%", value: 70, date: "2018-06-01 11:03:00" },{ type: "温度/℃", value: 23.3, date: "2018-06-01 11:03:00" },
+    { type: "湿度/%", value: 69.9, date: "2018-06-01 11:04:00" },{ type: "温度/℃", value: 23.3, date: "2018-06-01 11:04:00" },
+    { type: "湿度/%", value: 69.9, date: "2018-06-01 11:05:00" },{ type: "温度/℃", value: 23.3, date: "2018-06-01 11:05:00" },
+    { type: "湿度/%", value: 69.9, date: "2018-06-01 11:06:00" },{ type: "温度/℃", value: 23.3, date: "2018-06-01 11:06:00" },
+    { type: "湿度/%", value: 69.8, date: "2018-06-01 11:07:00" },{ type: "温度/℃", value: 23.3, date: "2018-06-01 11:07:00" },
+    { type: "湿度/%", value: 69.8, date: "2018-06-01 11:08:00" },{ type: "温度/℃", value: 23.3, date: "2018-06-01 11:08:00" },
+    { type: "湿度/%", value: null, date: "2018-06-01 11:09:00" },{ type: "温度/℃", value: null, date: "2018-06-01 11:09:00" }
   ]
-
   const chart = new F2.Chart({
     el: canvas,
     width,
     height
   });
-
-  chart.source(data, {
-    value: {
-      tickCount: 5,
-      min: 0
-    },
-    date: {
+  chart.source(arr, {
+    'date': {
       type: 'timeCat',
-      // range: [ 0, 1 ],
-      tickCount: 3
+      mask: 'HH:mm',
+      tickCount: 6,
+      range: [0, 1]
+    },
+    'value': {
+      type: 'linear',
+      tickCount: 5,
     }
   });
-
-  chart.tooltip({
-    // custom: true,
-    showXTip: true,
-    showYTip: true,
-    snap: true,
-    crosshairsType: 'xy',
-    crosshairsStyle: {
-      lineDash: [ 2 ]
-    }
-  });
-
   chart.axis('date', {
-    label: function label(text, index, total) {
-      const textCfg = {};
+    label(text, index, total) {
+      const cfg = {
+        textAlign: 'center'
+      };
       if (index === 0) {
-        textCfg.textAlign = 'left';
-      } else if (index === total - 1) {
-        textCfg.textAlign = 'right';
+        cfg.textAlign = 'left';
       }
-      return textCfg;
+      if (index > 0 && index === total - 1) {
+        cfg.textAlign = 'right';
+      }
+      return cfg;
     }
   });
-
-  chart.line().position('date*value');
+  chart.tooltip({
+    showCrosshairs: true,
+    custom: true, // 自定义 tooltip 内容框
+    onChange(obj) {
+      const legend = chart.get('legendController').legends.top[0];
+      const tooltipItems = obj.items;
+      const legendItems = legend.items;
+      const map = {};
+      legendItems.map(item => {
+        map[item.name] = Object.assign({}, item);
+      });
+      tooltipItems.map(item => {
+        const { name, value, title } = item;
+        if (map[name]) {
+          map[name].value = `${value}|${title}`;
+        }
+      });
+      legend.setItems(Object.values(map));
+    },
+    onHide() {
+      const legend = chart.get('legendController').legends.top[0];
+      legend.setItems(chart.getLegendItems().country);
+    }
+  });
+  chart.area().position('date*value').color('type');
+  chart.line().position('date*value').color('type');
   chart.render();
-
   return chart;
 }
 
 Page({
-  onShareAppMessage: function (res) {
-    return {
-      title: 'F2 微信小程序图表组件，你值得拥有~',
-      path: '/pages/index/index',
-      success: function () { },
-      fail: function () { }
-    }
-  },
   data: {
     opts: {
       onInit: initChart

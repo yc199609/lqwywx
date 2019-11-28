@@ -50,6 +50,27 @@
 					"id": -1,
 					"name": "pages/status/index",
 					"pathName": "pages/status/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "bangd",
+					"pathName": "pages/login/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chip_bind/index",
+					"pathName": "pages/chip_bind/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/devices_handover/index",
+					"pathName": "pages/devices_handover/index",
 					"scene": null
 				}
 			]

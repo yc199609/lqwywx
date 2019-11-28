@@ -218,13 +218,13 @@ function initChart(canvas, width, height) {
     },
     date: {
       type: 'timeCat',
-      range: [ 0, 1 ],
+      // range: [ 0, 1 ],
       tickCount: 3
     }
   });
 
   chart.tooltip({
-    custom: true,
+    // custom: true,
     showXTip: true,
     showYTip: true,
     snap: true,

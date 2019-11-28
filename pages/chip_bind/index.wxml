@@ -8,15 +8,11 @@
       <button bindtap="search" class="cu-btn bg-gradual-green shadow-blur round">搜索</button>
     </view>
   </view>
-  <view class="title" style="margin-top: 100rpx;">
-    <text>
-      设备列表
-    </text>
+  <view class="mytitle" style="margin-top: 106rpx;">
+    设备列表
   </view>
-  <view class="sub-title">
-    <text >
-      点击对应设备，进行NFC芯片绑定
-    </text>
+  <view class="mysub-title">
+    点击对应设备，进行NFC芯片绑定
   </view>
   <view class="cu-list menu  mycard margin-top" bindtap="hanldGoDetail">
     <view class="cu-item arrow">

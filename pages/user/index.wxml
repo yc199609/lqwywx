@@ -1,5 +1,5 @@
 <view class="content">
-  <view class="userIcon" style="display: flex;justify-content: center;background-color: #007AFF;height: 444rpx;align-items: center;">
+  <view class="userIcon userbg">
     <view class="myavatar"></view>
   </view>
   <view class="grid col-2 mycard">

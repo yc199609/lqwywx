@@ -1,6 +1,9 @@
 <view class="content">
   <view class="userIcon userbg">
-    <view class="myavatar"></view>
+    <image class="myavatar {{avatar?'':'hidden'}}" src="https://yc199609.github.io/images/logo.jpeg" bindload="avatarLoad"></image>
+    <view class="myavatar {{avatar?'hidden':''}}" style="background-color: white;">
+      <text class="cuIcon-people" style="font-size: 90rpx;"></text>
+    </view>
   </view>
   <view class="grid col-2 mycard">
     <view class="grid-item bg-white" bindtap="handleDeviceHandover">

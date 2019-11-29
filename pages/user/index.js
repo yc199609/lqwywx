@@ -8,7 +8,13 @@ Page({
       { name: '河北保定榕城泵站' },
       { name: '瑞洪盐业' },
       { name: '天津华新' }
-    ]
+    ],
+    avatar:false
+  },
+  avatarLoad(){
+    this.setData({
+      avatar:true
+    })
   },
   handleDeviceHandover(){
     wx.navigateTo({

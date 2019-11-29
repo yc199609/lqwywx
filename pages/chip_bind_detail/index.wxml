@@ -14,9 +14,7 @@
       </view>
     </view>
     <view class="solids-bottom bandChipBox">
-      <view class="">
-        <text class="prop">已绑芯片:</text>
-      </view>
+      <text class="prop margin80">已绑芯片:</text>
       
       <view class="cu-form-group">
         <view class="grid col-4 grid-square flex-sub">
@@ -33,16 +31,22 @@
       </view>
       
     </view>
-    <view class="solids-bottom newChip">
+    <view class="solids-bottom title">
       新增绑定芯片
     </view>
     <form>
       <view class="inputBox formtop">
-        <view style="color: #ccc;">芯片编号</view>
-        <input class="input"></input>
+        <view style="color: #aaa;display: flex;align-items: flex-end;">芯片编号</view>
+        <view class="input">
+          <input ></input>
+          <button class="cu-btn" bindtap="scanCode">
+            <text class="cuIcon-scan"></text>
+          </button>
+        </view>
+        
       </view>
       <view class="inputBox">
-        <view style="color: #ccc;">安装位置</view>
+        <view style="color: #aaa;">安装位置</view>
 
         <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
           <view class="picker">
@@ -52,8 +56,7 @@
         
       </view>
       <view class="btnBox">
-        <button type="primary">确定</button>
-        <button class="danger">取消</button>
+        <button class="cu-btn margin-tb-sm lg">确 定</button>
       </view>
     </form>
   </view>

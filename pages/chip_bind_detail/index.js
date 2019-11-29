@@ -4,8 +4,22 @@ Page({
     index:-1,
     imgList: []
   },
+  scanCode(){
+    wx.scanCode({
+      success(res){
+        console.log(res)
+        // charSet: "UTF-8"
+        // errMsg: "scanCode:ok"
+        // rawData: "aHR0cDovL2JhaWtlLmJhaWR1LmNvbQ=="
+        // result: "http://baike.baidu.com"
+        // scanType: "QR_CODE"
+      }
+    })
+  },
   PickerChange(e) {
-    this.index = e.detail.value
+    this.setData({
+      index:e.detail.value
+    })
   },
   ViewImage(e) {
     wx.previewImage({

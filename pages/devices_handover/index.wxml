@@ -5,11 +5,7 @@
       <view class="border"></view>
       <view class="content">
         <view class="title text-grey">听诊器1</view>
-        <view class="sub-title text-gray text-sm flex">
-          <text class="text-cut">
-            423142343124232
-          </text>
-        </view>
+        <view class="sub-title text-gray text-sm flex text-cut">423142343124232</view>
       </view>
       <view class="action">
         <button class="btn" type="primary">归还</button>
@@ -21,11 +17,7 @@
       </view>
       <view class="content">
         <view class="title text-grey">听诊器2</view>
-        <view class="sub-title text-gray text-sm flex">
-          <text class="text-cut">
-            423142343124232
-          </text>
-        </view>
+        <view class="sub-title text-gray text-sm flex text-cut">423142343124232</view>
       </view>
       <view class="action">
         <button class="btn" type="primary">归还</button>
@@ -33,6 +25,6 @@
     </view>
   </view>
   <view class="btnBox">
-    <button class="newDeviceBtn" type="primary">领用新设备</button>
+    <button class="newDeviceBtn margin-tb-sm cu-btn lg">领用新设备</button>
   </view>
 </view>

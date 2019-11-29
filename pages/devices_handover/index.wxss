@@ -1,10 +1,11 @@
 .newDeviceBtn {
   background-color: #00A0E9 !important;
-  margin-top: 100rpx;
-  border-radius: 0;
-  width: 500rpx;
-  height: 120rpx;
-  font-size: 42rpx;
+  color: #fff !important;
+  margin: 100rpx auto 0;
+  width: 400rpx;
+  line-height: 106rpx !important;
+  height: 106rpx !important;
+  font-size: 32rpx;
   font-family: Source Han Sans CN;
   font-weight: 400;
 }
@@ -45,7 +46,7 @@
   height: 154rpx;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   left: 176rpx !important;
   width: calc(100% - 96rpx - 60rpx - 152rpx - 38rpx) !important;
 }
@@ -63,4 +64,8 @@
 }
 .sub-title {
   font-size: 28rpx !important;
+}
+.btnBox {
+  display: flex;
+  justify-content: center;
 }

@@ -22,8 +22,8 @@
         <view class="grid col-4 grid-square flex-sub">
           <view class="bg-img" wx:for="{{imgList}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
            <image src="{{imgList[index]}}" mode="aspectFill"></image>
-            <view class="cu-tag bg-red" bindtap="DelImg" data-index="{{index}}">
-              <text class='cuIcon-close'></text>
+            <view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}" >
+              <text class='cuIcon-close' style="color: white;"></text>
             </view>
           </view>
           <view class="solids" bindtap="ChooseImage" wx-if="{{imgList.length<4}}">
@@ -43,11 +43,13 @@
       </view>
       <view class="inputBox">
         <view style="color: #ccc;">安装位置</view>
+
         <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
           <view class="picker">
             {{index>-1?picker[index]:'请选择'}}
           </view>
         </picker>
+        
       </view>
       <view class="btnBox">
         <button type="primary">确定</button>

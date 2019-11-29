@@ -13,7 +13,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.3",
-	"appid": "wxd574468d18e8a5b3",
+	"appid": "wx32e678facb04f646",
 	"projectname": "hellowx",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -44,21 +44,7 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "pages/chip_bind_detail/index",
-					"pathName": "pages/chip_bind_detail/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "user",
-					"pathName": "pages/login/index",
-					"scene": null
-				}
-			]
+			"list": []
 		}
 	}
 }

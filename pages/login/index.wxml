@@ -63,7 +63,7 @@
       <view class="padding-xl">
       <radio-group class="block">
         <view class="cu-list menu text-left">
-          <view class="cu-item" wx:for="{{organization}}">
+          <view class="cu-item" wx:for="{{organization}}" wx:key="{{index}}">
             <label class="flex justify-between align-center flex-sub">
             <view class="flex-sub">{{item.name}}</view>
             <radio class="round" color="#0faeff"></radio>

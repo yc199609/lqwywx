@@ -55,7 +55,7 @@ Page({
             time: '2015-05-24'
           }, 
           {
-            itemName: '子列表1-3',
+            itemName: '子列表3-3',
             content: '3-3中的内容',
             time: '2015-05-30'
           }

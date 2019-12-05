@@ -11,6 +11,10 @@ Page({
     ],
     avatar:false
   },
+  onHide(){
+    this.hideModal()
+    this.hideModal2()
+  },
   avatarLoad(){
     this.setData({
       avatar:true

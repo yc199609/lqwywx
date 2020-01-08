@@ -1,0 +1,73 @@
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text> 南方泵业宿舍1号水泵
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow" bindtap="insertModal" data-target="menuModal">绑定芯片</button>
+  </view>
+</view>
+<!-- 列表 -->
+<view class="cu-list  menu-avatar">
+  <view class="cu-item" >
+    <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+    <view class="content padding-tb-sm">
+      <view>前轴承</view>
+    </view>
+    <view class="action" style="width: auto;">
+      <button class="cu-btn round line-red shadow" bindtap="showModal" data-target="DialogModal0">
+        <text class="cuIcon-delete"></text> 解绑</button>
+    </view>
+  </view>
+
+  <!-- 模态框 -->
+  <view class="cu-modal {{modalName=='DialogModal0'?'show':''}}">
+    <view class="cu-dialog">
+      <view class="cu-bar bg-white justify-end">
+        <view class="content">确定删除</view>
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close text-red"></text>
+        </view>
+      </view>
+      <view class="cu-bar bg-white justify-center">
+        <view class="action">
+          <button class="cu-btn line-green text-green" bindtap="hideModal">取消</button>
+          <button class="cu-btn bg-green margin-left" bindtap="hideModal">确定</button>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="cu-item" >
+    <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+    <view class="content padding-tb-sm">
+      <view>后轴承</view>
+    </view>
+    <view class="action" style="width: auto;">
+      <button class="cu-btn round line-red shadow">
+        <text class="cuIcon-delete"></text> 解绑</button>
+    </view>
+  </view>
+
+  <view class="cu-item" >
+    <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+    <view class="content padding-tb-sm">
+      <view>左侧面</view>
+    </view>
+    <view class="action" style="width: auto;">
+      <button class="cu-btn round line-red shadow">
+        <text class="cuIcon-delete"></text> 解绑
+      </button>
+    </view>
+  </view>
+
+  <view class="cu-item" >
+    <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+    <view class="content padding-tb-sm">
+      <view>右侧面</view>
+    </view>
+    <view class="action" style="width: auto;">
+      <button class="cu-btn round line-red shadow">
+        <text class="cuIcon-delete"></text> 解绑</button>
+    </view>
+  </view>
+</view>

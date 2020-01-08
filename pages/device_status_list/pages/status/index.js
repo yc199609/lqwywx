@@ -1,0 +1,12 @@
+Page({
+  handleCurve(){
+    wx.navigateTo({
+      url:"/pages/device_status_list/pages/lua_curve/index"
+    })
+  },
+  handleWarn(){
+    wx.navigateTo({
+      url:"/pages/device_status_list/pages/fault_list/index"
+    })
+  }
+})

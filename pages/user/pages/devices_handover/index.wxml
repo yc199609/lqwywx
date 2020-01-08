@@ -1,0 +1,29 @@
+<view>
+  <view class="cu-bar bg-white solid-bottom">
+    <view class="action">
+      <text class="cuIcon-title text-orange "></text> 听诊器列表
+    </view>
+    <view class="action">
+      <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="menuModal">领用</button>
+    </view>
+  </view>
+
+  <view class="cu-list menu-avatar">
+
+    <view class="cu-item" wx:for="{{4}}" wx:key >
+
+      <view class="cu-avatar round lg" style="background-image:url(https://cdn.gosafenet.com/static/weixin/static/device.png);"></view>
+      <view class="content">
+        <view class="text-grey">听诊器1</view>
+        <view class="text-gray text-sm">423142343124232</view>
+      </view>
+
+      <view class="action" style="width: auto;">
+        <button class="cu-btn round line-red shadow">
+          <text class="cuIcon-delete"></text> 归还</button>
+      </view>
+      
+    </view>
+  </view>
+  
+</view>

@@ -1,0 +1,18 @@
+<form>
+  <view class="cu-form-group margin-top">
+		<view class="title">芯片编号</view>
+		<input placeholder="输入芯片编号或扫码"></input>
+		<text bindtap="handleScan" class="cuIcon-scan text-grey"></text>
+  </view>
+  <view class="cu-form-group ">
+		<view class="title">安装位置</view>
+		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+			<view class="picker">
+				{{index?picker[index]:'选择安装位置'}}
+			</view>
+		</picker>
+	</view>
+	<view class="padding">
+		<button class="cu-btn block bg-blue lg">确认提交</button>
+	</view>
+</form>

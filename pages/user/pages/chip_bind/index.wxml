@@ -1,0 +1,38 @@
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text> 设备列表
+  </view>
+</view>
+<view class="cu-list menu">
+  <view class="cu-item arrow" bindtap="hanldGoDetail">
+    <view class="content padding-tb-sm">
+      <view>南方泵业宿舍1号水泵</view>
+      <view class="text-gray text-sm">AATJ00018000810000000087</view>
+    </view>
+    <view class="action">已绑定2个芯片</view>
+  </view>
+
+  <view class="cu-item arrow" bindtap="hanldGoDetail">
+    <view class="content padding-tb-sm">
+      <view>南方泵业宿舍2号水泵</view>
+      <view class="text-gray text-sm">AATJ00018000810000000087</view>
+    </view>
+    <view class="action">已绑定3个芯片</view>
+  </view>
+
+  <view class="cu-item arrow" bindtap="hanldGoDetail">
+    <view class="content padding-tb-sm">
+      <view>南方泵业宿舍3号水泵</view>
+      <view class="text-gray text-sm">AATJ00018000810000000087</view>
+    </view>
+    <view class="action">已绑定2个芯片</view>
+  </view>
+
+  <view class="cu-item arrow" bindtap="hanldGoDetail">
+    <view class="content padding-tb-sm">
+      <view>南方泵业宿舍4号水泵</view>
+      <view class="text-gray text-sm">AATJ00018000810000000087</view>
+    </view>
+    <view class="action">已绑定1个芯片</view>
+  </view>
+</view>

@@ -1,18 +1,36 @@
 {
   "pages": [
     "pages/login/index",
-    "pages/chip_bind/index",
-    "pages/chip_bind_detail/index",
-    "pages/devices_handover/index",
-    "pages/device_status_list/index",
-    "pages/fault_details/index",
-    "pages/fault_list/index",
-    "pages/fault_reason/index",
-    "pages/vibration_monitoring/index",
-    "pages/vibration_curves/index",
-    "pages/user/index",
-    "pages/status/index",
-    "pages/lua_curve/index"
+    "pages/tabBar/device_status_list/index",
+    "pages/tabBar/vibration_monitoring/index",
+    "pages/tabBar/user/index"
+  ],
+  "subpackages":[
+    {
+      "root": "pages/user",
+      "pages":[
+        "pages/chip_bind/chip_bind_detail/index",
+        "pages/chip_bind/chip_bind_detail/form/index",
+        "pages/chip_bind/index",
+        "pages/devices_handover/index"
+      ]
+    },
+    {
+      "root": "pages/vibration_monitoring",
+      "pages":[
+        "pages/vibration_curves/index"
+      ]
+    },
+    {
+      "root": "pages/device_status_list",
+      "pages":[
+        "pages/lua_curve/index",
+        "pages/status/index",
+        "pages/fault_list/index",
+        "pages/fault_list/fault_details/index",
+        "pages/fault_list/fault_details/fault_reason/index"
+      ]
+    }
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -27,19 +45,19 @@
     "backgroundColor": "#ffffff",
     "list":[
       {
-        "pagePath":"pages/device_status_list/index",
+        "pagePath":"pages/tabBar/device_status_list/index",
         "text": "状态监控",
 				"iconPath": "static/status.png",
 				"selectedIconPath": "static/status_active.png"
       },
       {
-        "pagePath": "pages/vibration_monitoring/index",
+        "pagePath": "pages/tabBar/vibration_monitoring/index",
 				"text": "震动监控",
 				"iconPath": "static/vibration.png",
 				"selectedIconPath": "static/vibration_active.png"
       },
       {
-        "pagePath": "pages/user/index",
+        "pagePath": "pages/tabBar/user/index",
 				"text": "用户中心",
 				"iconPath": "static/user.png",
 				"selectedIconPath": "static/user_active.png"

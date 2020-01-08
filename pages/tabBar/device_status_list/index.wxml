@@ -1,0 +1,32 @@
+<block wx:for-items="{{list}}" wx:key="{{item.id}}">
+  <view class="kind-list-item {{item.open ? 'heightauto' : 'height100'}}">
+    <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+      <view class="kind-list-text">{{item.name}}</view>
+      <text class="cuIcon-fold {{item.open ? 'rotate90' : ''}}"></text>
+    </view>
+    <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+      <view class="navigator-box cu-list menu menu-avatar {{item.open ? 'navigator-box-show' : ''}}">
+        <view class="navigate-item cu-item arrow" wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item" bindtap="chooseDevice">
+          <view class="cu-avatar round lg" style="background-image:url(https://cdn.gosafenet.com/static/weixin/static/device.png);">
+            <view class="cu-tag badge">
+            </view>
+          </view>
+          <view class="content padding-tb-sm">
+            <view>设备名称:</view>
+            <view class="text-gray text-sm">小目标还没有实现！</view>
+          </view>
+        </view>
+        <view class="navigate-item cu-item arrow" bindtap="chooseDevice">
+          <view class="cu-avatar round lg" style="background-image:url(https://cdn.gosafenet.com/static/weixin/static/device.png);">
+            <view class="cu-tag badge bg-green">
+            </view>
+          </view>
+          <view class="content padding-tb-sm">
+            <view>设备名称:</view>
+            <view class="text-gray text-sm">小目标还没有实现！</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
